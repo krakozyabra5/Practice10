@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Element1Activity">
+
+  <TextClock
+      android:id="@+id/textClock"
+      android:layout_width="212dp"
+      android:layout_height="18dp"
+      android:layout_marginTop="13dp"
+      android:fillViewport="true"
+      android:gravity="right"
+      android:paddingRight="10dp"
+      android:text="12:40"
+      android:textColor="#FFFFFF"
+      android:translationZ="1dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/imageView8"
+      android:layout_width="18dp"
+      android:layout_height="18dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="6dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/left_arrow2" />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:contentDescription="Enter How Much Cookies You Want"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="21dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_cesar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Цезарь"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+      </FrameLayout>
+
+      <ImageView
+          android:id="@+id/imageView11"
+          android:layout_marginTop="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="156dp"
+          app:srcCompat="@drawable/cesar" />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/description"
+          android:textColor="#FFFFFF"
+          android:textSize="24sp" />
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/text_description_cezari"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp" />
+
+    </LinearLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
